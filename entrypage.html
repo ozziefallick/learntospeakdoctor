@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+         <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+		 <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+		<script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+        var companyName;
+        function getCompany() {
+        	companyName=window.location.toString().substring(window.location.toString().indexOf("=")+1);
+
+        }
+		getCompany();
+		var acctH = document.getElementById("acct");
+		acctH.write("Log in using your " + companyName + " username and password. we'll import your results.");
+        </script>
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+        <![endif]-->
+
+
+		<h2>Select an Input Method</h2>
+		<div  id="company-container">
+			<div style="float:left" id="logos">
+				<h3>Type in the results by hand. We'll tell you what values you need.</h3><br />
+				<h3>Upload an image or PDF of your test printout. We'll read the results.</h3><br />
+				<h3>Upload an XML file that your doctor gave you. We'll get the results from there.</h3><br />
+				<h3 id="acct">Log in using your LabCorp username and password. we'll import your results.</h3><br />
+			</div>
+			<div id="buttons">
+				<button onclick="getCompany()">
+					<h3>Manual Entry</h3>
+				</button><br />
+				<button onclick="alert('Click on Manual Entry')">
+					<h3>OCR</h3>
+				</button><br />
+				<button onclick="alert('Click on Manual Entry')">
+					<h3>File Upload</h3>
+				</button><br />
+				<button onclick="alert('Click on Manual Entry')">
+					<h3>Online Account</h3>
+				</button><br />
+			</div>
+		</div>
+
+    </body>
+</html>
