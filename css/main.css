@@ -10,9 +10,16 @@ textarea {
     color: #222;
 }
 
+button {
+	width: 300px;
+	margin: 5px;
+}
+
 body {
     font-size: 1em;
     line-height: 1.4;
+	text-align: center;
+	margin-top: 100px;
 }
 
 ::-moz-selection {
@@ -59,9 +66,21 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+#company-container{
+	border: 3px solid;
+	width:700px;
+	margin:0 auto;
+}
 
+#logos{
+	margin: 50px;
+	float: left;
+}
 
-
+#buttons{
+	margin: 50px;
+	text-align: right;
+}
 
 
 
