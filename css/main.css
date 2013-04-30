@@ -82,14 +82,74 @@ textarea {
 	text-align: right;
 }
 
+#selection-container{
+	border: 3px solid;
+	width: 700px;
+	margin: 0 auto;
 
+}
+#entry-text{
+	margin: 50 px;
+	float: left;
+	text-align: left;
+}
+#top-toolbar{
+	margin-top: 5px;
+	border: 2px solid;
+	position:relative;
 
+}
+#risk-toolbar{
+	text-align: right;
+	position: absolute;
+	left:0;
+	display:inline;
+}
+#detail-level-toolbar{
+	border:1px solid;
+	width: 20px;
+	display:inline;
+	margin-left: 500px;
+}
+#done-button{
+	
+	border: 1px solid;
+	background:GREEN;
+	display:inline;
+	float:right;
+	color:WHITE;
+}
+#analysis-div{
+	margin-top: 10px;
+	border: 2px solid;
+	border-color:BLUE;
+	width: 600px;
+	position:absolute;
+	
+}
+#definition-box{
+	border: 1px solid;
+	border-color: BLACK;
+	float:right;
+	
+}
+#suggestion-box{
+	border: 1px solid;
+	border-color: BLACK;
+	float:right;
+	
+}
+#behavorial-div{
+	margin-top:10px;
+	border: 2px solid;
+	border-color: BLUE;
+	position:relative;
+	color: WHITE;
+	background-color:GREY;
+	float:right;
+	
 
-
-
-
-
-
+}
 
 
 
