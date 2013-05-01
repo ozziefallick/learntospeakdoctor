@@ -44,27 +44,39 @@
 
 
 		<h2>Select an Input Method</h2>
-		<div  id="selection-container">
-			<div  id="entry-text">
-				<h3>Type in the results by hand. We'll tell you what values you need.</h3><br />
-				<h3>Upload an image or PDF of your test printout. We'll read the results.</h3><br />
-				<h3>Upload an XML file that your doctor gave you. We'll get the results from there.</h3><br />
-				<h3 id="acct">Log in using your LabCorp username and password. we'll import your results.</h3><br />
-			</div>
-			<div id="buttons">
-				<button onclick="changeHTML()">
-					<h3>Manual Entry</h3>
-				</button><br />
-				<button onclick="alert('Click on Manual Entry')">
-					<h3>OCR</h3>
-				</button><br />
-				<button onclick="alert('Click on Manual Entry')">
-					<h3>File Upload</h3>
-				</button><br />
-				<button onclick="alert('Click on Manual Entry')">
-					<h3>Online Account</h3>
-				</button><br />
-			</div>
+		<div id="choice-container">
+				<div class="label">
+					<h4>Type in the results by hand. We'll tell you what values you need.</h4><br />
+				</div>
+				<div class="button">
+					<button onclick="changeHTML()">
+						<h3>Manual Entry</h3>
+					</button>
+				</div>
+				<div class="label">
+					<h4>Upload an image or PDF of your test printout. We'll read the results.</h4><br />
+				</div>
+				<div class="button">
+					<button onclick="alert('Click on Manual Entry')">
+						<h3>OCR</h3>
+					</button>
+				</div>
+				<div class="label">
+					<h4>Upload an XML file that your doctor gave you. We'll get the results from there.</h4><br />
+				</div>
+				<div class="button">
+					<button onclick="alert('Click on Manual Entry')">
+						<h3>File Upload</h3>
+					</button>
+				</div>
+				<div class="label">
+					<h4>Log in using your LabCorp username and password. we'll import your results.</h4><br />
+				</div>
+				<div class="button">
+					<button onclick="alert('Click on Manual Entry')">
+						<h3>Online Account</h3>
+					</button>
+				</div>
 		</div>
 
     </body>

@@ -66,33 +66,29 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
-#company-container{
-	border: 3px solid;
-	width:700px;
-	margin:0 auto;
-}
-
-#logos{
-	margin: 50px;
-	float: left;
-}
-
-#buttons{
-	margin: 50px;
-	text-align: right;
-}
-
-#selection-container{
+#choice-container{
 	border: 3px solid;
 	width: 700px;
-	margin: 0 auto;
+	padding: 20px;
+	margin:0 auto;
+	overflow: hidden;
+	height: auto;
+}
 
+#choice-container div{
+	height: 75px;
 }
-#entry-text{
-	margin: 50 px;
+
+.label{
+	width: 310px;
 	float: left;
-	text-align: left;
+	clear: left;
 }
+
+.button{
+	float: right;
+}
+
 #top-toolbar{
 	margin-top: 5px;
 	border: 2px solid;
