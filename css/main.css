@@ -19,7 +19,7 @@ body {
     font-size: 1em;
     line-height: 1.4;
 	text-align: center;
-	margin-top: 100px;
+	margin-top: 30px;
 }
 
 ::-moz-selection {
@@ -79,6 +79,10 @@ textarea {
 	height: 75px;
 }
 
+#choice-container button{
+	height: 65px;
+}
+
 .label{
 	width: 310px;
 	float: left;
@@ -86,6 +90,25 @@ textarea {
 }
 
 .button{
+	float: right;
+}
+
+#wizard-controls{
+	padding: 10px;
+	width: 700px;
+	margin:0 auto;
+}
+
+#wizard-controls button{
+	width: auto;
+	padding: 10px;
+}
+
+#back-button{
+	float: left;
+}
+
+#forward-button{
 	float: right;
 }
 
