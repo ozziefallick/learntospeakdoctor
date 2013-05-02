@@ -15,16 +15,39 @@
 
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        function exitFunction() {
+        	$("#done-button").click(function(){
+        		<!--show exit overlay -->
+        		var overlay = jQuery('<div id="overlay"> </div>');
+        		overlay.appendTo(document.body);
+        	});
+
+        }
+        function changeSuggestions(level) {
+        	if (level == 'b') {
+				<!-- change to beginner-->
+
+        	} else if (level =='i') {
+        	    <!-- change to intermediate -->
+        	} else if (level == 'e') {
+        		<!-- change to expert -->
+
+        	}
+
+        }
+
+        </script>
    </head>
 <div id="top-toolbar" style="float:top">
 <span id="risk-toolbar">% and risks go here.</span>
 <span id="detail-level-toolbar">
 <select>
-  <option value="beginner">Beginner</option>
-  <option value="intermediate">intermediate</option>
-  <option value="expert">Expert</option></select></span>
+  <option value="beginner" onclick="changeSuggestions('b')">Beginner</option>
+  <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
+  <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
-<span id="done-button">I'm Done</span>
+<span id="done-button" onclick="exitFunction()" style="cursor:pointer"><strong>I'm Done</strong></span>
 
 </div>
 <body>
@@ -39,10 +62,70 @@
 
 
 
+
+
+<!--
 <div id="behavorial-div">
 <p>Behavorial Toolbox</p>
+<form action="">
+Exercise<br>
+<div class="squaredThree" id="exercise-div">
+<input id="opt1" type="checkbox" name="check" value="lunch-walk">
+<label for="opt1"></label> take a walk during lunch<br></div>
+
+<div class="squaredThree" id="exercise-div">
+<input id="opt2" type="checkbox" name="check" value="lunch-walk">
+<label for="opt2"></label>lift weights every night<br></div>
+</form>
+</div>
+-->
+
+
+
+
+
+
+
+
+<div id="behavorial-div">
+<p>Behavorial Toolbox</p>
+<form action="">
+<b>Exercise</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt1" name="opt1" value="lunch-walk">
+		<label for="opt1">take a walk during lunch</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt2" name="opt2" value="lift-weights">
+		<label for="opt2">lift weights every night</label>
+	</div>
+
+	<div class="select-row">
+		<input type="checkbox" id="opt3" name="opt3" value="bike-work">
+		<label for="opt3">bike to work</label>
+	</div>
+
+<b>Diet</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt4" name="opt4" value="olive-butter">
+		<label for="opt4">substitute olive oil for butter</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt5"name="opt5" value="fish">
+		<label for="opt5">eat fish 2x per week</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt6" name="opt6" value="greens">
+		<label for="opt6">eat leafy greens 3x per week</label>
+	</div>
+<b>Other</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt7" name="opt7" value="smoking">
+		<label for="opt7">quit smoking</label>
+	</div>
 
 </div>
+
 </body>
 
 </html>
