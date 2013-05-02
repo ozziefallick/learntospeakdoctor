@@ -1,0 +1,14 @@
+<div id="behavorial-div">
+<p>Behavorial Toolbox</p>
+<form action="">
+Exercise<br>
+<div class="squaredThree" id="exercise-div">
+<input id="opt1" type="checkbox" name="check" value="lunch-walk">
+<label for="opt1"></label> take a walk during lunch<br></div>
+<!--<input type="checkbox" name="opt2" value="lift-weights"> lift weights every night<br>
+<input type="checkbox" name="opt3" value="bike-work"> bike to work<br>-->
+<div class="squaredThree" id="exercise-div">
+<input id="opt2" type="checkbox" name="check" value="lunch-walk">
+<label for="opt2"></label>lift weights every night<br></div>
+</form>
+</div>

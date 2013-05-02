@@ -15,16 +15,39 @@
 
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script>
+        function exitFunction() {
+        	$("#done-button").click(function(){
+        		<!--show exit overlay -->
+        		var overlay = jQuery('<div id="overlay"> </div>');
+        		overlay.appendTo(document.body);
+        	});
+
+        }
+        function changeSuggestions(level) {
+        	if (level == 'b') {
+				<!-- change to beginner-->
+
+        	} else if (level =='i') {
+        	    <!-- change to intermediate -->
+        	} else if (level == 'e') {
+        		<!-- change to expert -->
+
+        	} 
+
+        }
+
+        </script>
    </head>
 <div id="top-toolbar" style="float:top">
 <span id="risk-toolbar">% and risks go here.</span>
 <span id="detail-level-toolbar">
 <select>
-  <option value="beginner">Beginner</option>
-  <option value="intermediate">intermediate</option>
-  <option value="expert">Expert</option></select></span>
+  <option value="beginner" onclick="changeSuggestions('b')">Beginner</option>
+  <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
+  <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
-<span id="done-button">I'm Done</span>
+<span id="done-button" onclick="exitFunction()">I'm Done</span>
 
 </div>
 <body>
@@ -39,10 +62,46 @@
 
 
 
+
+
+
 <div id="behavorial-div">
 <p>Behavorial Toolbox</p>
+<form action="">
+Exercise<br>
+<div class="squaredThree" id="exercise-div">
+<input id="opt1" type="checkbox" name="check" value="lunch-walk">
+<label for="opt1"></label> take a walk during lunch<br></div>
 
+<div class="squaredThree" id="exercise-div">
+<input id="opt2" type="checkbox" name="check" value="lunch-walk">
+<label for="opt2"></label>lift weights every night<br></div>
+</form>
 </div>
+
+
+
+
+
+
+
+<!--
+
+<div id="behavorial-div">
+<p>Behavorial Toolbox</p>
+<form action="">
+Exercise<br>
+<input type="checkbox" name="opt1" value="lunch-walk"> take a walk during lunch<br>
+<input type="checkbox" name="opt2" value="lift-weights"> lift weights every night<br>
+<input type="checkbox" name="opt3" value="bike-work"> bike to work<br>
+Diet<br>
+<input type="checkbox" name="opt4" value="olive-butter"> substitute olive oil for butter<br>
+<input type="checkbox" name="opt5" value="fish"> eat fish 2x per week<br>
+<input type="checkbox" name="opt6" value="greens"> eat leafy greens 3x per week<br>
+Other<br>
+<input type="checkbox" name="opt7" value="smoking"> quit smoking<br>
+</div>
+-->
 </body>
 
 </html>
