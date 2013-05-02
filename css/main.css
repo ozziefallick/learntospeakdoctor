@@ -83,13 +83,6 @@ textarea {
 	height: 65px;
 }
 
-#form-container{
-	background-image: url('../img/labcorp_test.jpg');
-	background-repeat:no-repeat;
-	height: 450px;
-	width: 600px;
-}
-
 .label{
 	width: 310px;
 	float: left;
