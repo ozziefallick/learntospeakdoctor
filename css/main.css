@@ -190,6 +190,10 @@ textarea {
     z-index: 10000;
 }
 
+.select-row {margin: 10px;clear:both;overflow:hidden;}
+.select-row label {float:right;text-align:left; }
+.select-row input {float:left;}
+
 /*
 ==========
 CSSdeck checkboxes from Kush. Agarwal
@@ -197,10 +201,13 @@ CSSdeck checkboxes from Kush. Agarwal
 input[type=checkbox] {
 	visibility: hidden;
 }
-input[type=checkbox] {
-	float:left:
-}
+
 */
+input[type=checkbox] {
+	vertical-align:bottom:
+	margin:0;
+	position: relative;
+}
 /* SQUARED THREE */
 .squaredThree {
 	width: 10px;	

@@ -33,7 +33,7 @@
         	} else if (level == 'e') {
         		<!-- change to expert -->
 
-        	} 
+        	}
 
         }
 
@@ -47,7 +47,7 @@
   <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
   <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
-<span id="done-button" onclick="exitFunction()">I'm Done</span>
+<span id="done-button" onclick="exitFunction()" style="cursor:pointer"><strong>I'm Done</strong></span>
 
 </div>
 <body>
@@ -64,7 +64,7 @@
 
 
 
-
+<!--
 <div id="behavorial-div">
 <p>Behavorial Toolbox</p>
 <form action="">
@@ -78,6 +78,7 @@ Exercise<br>
 <label for="opt2"></label>lift weights every night<br></div>
 </form>
 </div>
+-->
 
 
 
@@ -85,23 +86,46 @@ Exercise<br>
 
 
 
-<!--
 
 <div id="behavorial-div">
 <p>Behavorial Toolbox</p>
 <form action="">
-Exercise<br>
-<input type="checkbox" name="opt1" value="lunch-walk"> take a walk during lunch<br>
-<input type="checkbox" name="opt2" value="lift-weights"> lift weights every night<br>
-<input type="checkbox" name="opt3" value="bike-work"> bike to work<br>
-Diet<br>
-<input type="checkbox" name="opt4" value="olive-butter"> substitute olive oil for butter<br>
-<input type="checkbox" name="opt5" value="fish"> eat fish 2x per week<br>
-<input type="checkbox" name="opt6" value="greens"> eat leafy greens 3x per week<br>
-Other<br>
-<input type="checkbox" name="opt7" value="smoking"> quit smoking<br>
+<b>Exercise</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt1" name="opt1" value="lunch-walk">
+		<label for="opt1">take a walk during lunch</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt2" name="opt2" value="lift-weights">
+		<label for="opt2">lift weights every night</label>
+	</div>
+
+	<div class="select-row">
+		<input type="checkbox" id="opt3" name="opt3" value="bike-work">
+		<label for="opt3">bike to work</label>
+	</div>
+
+<b>Diet</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt4" name="opt4" value="olive-butter">
+		<label for="opt4">substitute olive oil for butter</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt5"name="opt5" value="fish">
+		<label for="opt5">eat fish 2x per week</label>
+	</div>
+	<div class="select-row">
+		<input type="checkbox" id="opt6" name="opt6" value="greens">
+		<label for="opt6">eat leafy greens 3x per week</label>
+	</div>
+<b>Other</b><br>
+	<div class="select-row">
+		<input type="checkbox" id="opt7" name="opt7" value="smoking">
+		<label for="opt7">quit smoking</label>
+	</div>
+
 </div>
--->
+
 </body>
 
 </html>
