@@ -29,16 +29,19 @@
         function changeSuggestions(level) {
         	if (level == 'b') {
 				<!-- change to beginner-->
-				document.getElementById("chol-def").innerHTML = "Sextus puer molestus est...";
-				document.getElementById("bc-def").innerHTML = "Sextus puer molestus est...";
+				document.getElementById("chol-def").innerHTML = "It is ideal to have cholesterol in the lower (green) range.<br /><br />" +
+				"It is beneficial to have low HDL (\"good\" cholesterol) level.<br /><br />" +
+				"High LDL (\"bad\" cholesterol) levels can be a potential health hazard.";
+				document.getElementById("bc-def").innerHTML = "Red blood cells help deliver oxygen to the body. It is ideal to have a count within the green range.<br /><br />" +
+				"White blood cells protect the body against infection. It is ideal to have a count within the green range.";
         	} else if (level =='i') {
         	    <!-- change to intermediate -->
-				document.getElementById("chol-def").innerHTML = "Omnia Gallia divisa est in partes tres...";
-				document.getElementById("bc-def").innerHTML = "Omnia Gallia divisa est in partes tres...";
+				document.getElementById("chol-def").innerHTML = "Too much cholesterol in the blood can collect on artery walls to make plaques and restrict blood flow. HDL (\"good\" cholesterol) helps clear plaques, while LDL (\"bad\" cholesterol) contributes to them. High triglyceride levels lead to increased LDL and decreased HDL.";
+				document.getElementById("bc-def").innerHTML = "Red blood cells deliver oxygen to the body, while white blood cells protect the body against infection. Low red blood cell counts indicate anemia, while high white blood cell counts indicate an ongoing infection.";
         	} else if (level == 'e') {
         		<!-- change to expert -->
-				document.getElementById("chol-def").innerHTML = "Arma virumque cano, Troiae qui primus ab oris...";
-				document.getElementById("bc-def").innerHTML = "Arma virumque cano, Troiae qui primus ab oris...";
+				document.getElementById("chol-def").innerHTML = "Clogged arteries result from a buildup of a substance called plaque along the arteries' inner walls. The arterial plaque can reduce blood flow, and can potentially block it altogether. Too much cholesterol in the blood can collect to form arma virumque cano, Troiae qui primus ab oris...";
+				document.getElementById("bc-def").innerHTML = "Red blood cells deliver oxygen to the body, while white blood cells protect the body against infection. Low red blood cell counts indicate anemia, while high white blood cell counts indicate an ongoing infection.";
         	}
 
         }
@@ -66,9 +69,9 @@
 <span id="risk-toolbar"><span id="risk">25%</span> risk of cardiovascular disease in the next 10 years</span>
 <span id="detail-level-toolbar">
 Detail level: 
-<select selected="basic">
-  <option value="basic" onclick="changeSuggestions('b')">Basic</option>
-  <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
+<select>
+  <option value="basic" onclick="changeSuggestions('b')" selected="selected">Basic</option>
+  <option value="intermediate" onclick="changeSuggestions('i')">Intermediate</option>
   <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
 <span id="done-button" onclick="showOverlay('done-button')"><strong>I'm Done</strong></span>
@@ -88,7 +91,9 @@ Detail level:
 		</div>
 		<div class="infoboxes">
 			<h4>What This Means</h4>
-			<div class="definition-box" id="chol-def">Sextus puer molestus est...</div>
+			<div class="definition-box" id="chol-def">It is ideal to have cholesterol in the lower (green) range.<br /><br />
+				It is beneficial to have low HDL ("good" cholesterol) level.<br /><br />
+				High LDL ("bad" cholesterol) levels can be a potential health hazard.</div>
 			<h4>Suggestions</h4>
 			<div class="suggestion-box" id="chol-sug">
 				You can <em>reduce</em> your LDL by:<br />
@@ -109,7 +114,9 @@ Detail level:
 		</div>
 		<div class="infoboxes">
 			<h4>What This Means</h4>
-			<div class="definition-box" id="bc-def">Sextus puer molestus est...</div>
+			<div class="definition-box" id="bc-def">Red blood cells help deliver oxygen to the body. It is ideal to have a count within the green range.<br /><br />
+				White blood cells protect the body against infection. It is ideal to have a count within the green range.
+			</div>
 			<h4>Suggestions</h4>
 			<div class="suggestion-box" id="bc-sug">
 				You can <em>raise</em> your RBC count by:<br />

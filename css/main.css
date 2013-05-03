@@ -186,7 +186,8 @@ textarea {
 	padding: 5px;
 	border: 1px solid;
 	border-color: BLACK;
-	height: 150px;
+	height: auto;
+	max-height: 200px;
 }
 .suggestion-box{
 	padding: 5px;
