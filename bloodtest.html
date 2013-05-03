@@ -27,6 +27,20 @@
             }
         	
         }
+		
+		function flashBoxes(b, n) {
+			for(var i = 0; i <= n; i++) {
+				setTimeout("boxColor('" + b + "', '#70B8FF')", i * 400);
+				setTimeout("boxColor('" + b + "', 'white')", i * 400 + 200);
+			}
+		}
+		
+		function boxColor(b, c) {
+			$(b).each(function () {
+				this.style.backgroundColor = c;
+			});
+		};
+		
         function changeSuggestions(level) {
         	if (level == 'b') {
 				<!-- change to beginner-->
@@ -45,6 +59,7 @@
 				document.getElementById("bc-def").innerHTML = "Red blood cells deliver oxygen to the body, while white blood cells protect the body against infection. Low red blood cell counts indicate anemia, while high white blood cell counts indicate an ongoing infection.";
         	}
 
+			flashBoxes('.definition-box', 3);
         }
         function clearAllChecks() {
             $('input[type=checkbox]').each(function () {
@@ -66,6 +81,7 @@
 			document.getElementById('behav-nothing').style.display = 'none';
 			document.getElementById('behav-options').style.display = 'inline';
 			document.getElementById('behav-selected').style.display = 'none';
+			flashBoxes('.suggestion-box', 3);
 		}
 		
 		function closeOptions() {
