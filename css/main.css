@@ -203,6 +203,8 @@ textarea {
 	background-color:#70B8FF;
 	float:right;
 	overflow: auto;
+	text-align: left;
+	padding: 5px;
 }
 #behavior-btns-div{
     width: 20px;
