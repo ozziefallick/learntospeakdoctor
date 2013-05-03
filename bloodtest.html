@@ -59,10 +59,19 @@
         </script>
    </head>
    <div id="exit-overlay" class="overlay">
-        <div class="overlay-box"><p>Test</p></div>
+        <div class="overlay-box">
+			<h4>What would you like to do now?</h4>
+			<button class="close-button" onclick="$('#exit-overlay').fadeOut(100)">X</button>
+			<button onclick="alert('Not yet implemented')">Save these results</button>
+			<button onclick="alert('Not yet implemented')">Print these results</button>
+			<button onclick="alert('Not yet implemented')">Go to action plan</button>
+		</div>
    </div>
    <div id="resource-overlay" class="overlay">
-        <div class="overlay-box"><p>Test</p></div>
+        <div class="overlay-box">
+			<h4>Healthy Behaviors Resource Center</h4>
+			<button class="close-button" onclick="$('#resource-overlay').fadeOut(100)">X</button>
+		</div>
    </div>
 <div id="top-toolbar">
 	<div id="top-inner">
