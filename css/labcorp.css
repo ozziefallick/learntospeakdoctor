@@ -4,39 +4,51 @@ div.main-container {
 }
 
 #form-container{
-	background-image: url('../img/labcorp_test.jpg');
+	background-image: url('../img/labcorp_test_2.jpg');
 	background-repeat:no-repeat;
-	height: 450px;
-	width: 600px;
+	height: 670px;
+	width: 900px;
 }
 
+/*#form-content {
+	background-image: url('../img/labcorp_test_2.jpg');
+	background-repeat:no-repeat;
+	height: 100%;
+	width: 100%;
+	overflow: visible;
+}*/
+
 #form-container input{
-	height: 11px;
-	width: 20px;
-	font-size: 5pt;
+	height: 18px;
+	width: 35px;
+	font-size: 12pt;
 	border: 1px solid black;
 	background-color: #bbbbff;
 	padding: 0px;
 	position:absolute;
-	left:270px;
+	left:385px;
 }
 
-#i1 {top:150px;}
-#i2 {top:163px;}
-#i3 {top:176px;}
-#i4 {top:189px;}
-#i5 {top:202px;}
-#i6 {top:215px;}
-#i7 {top:228px;}
-#i8 {top:241px;}
-#i9 {top:254px;}
-#i10 {top:267px;}
-#i11 {top:280px;}
-#i12 {top:293px;}
-#i13 {top:306px;}
-#i14 {top:319px;}
-#i15 {top:355px;}
-#i16 {top:368px;}
-#i17 {top:381px;}
-#i18 {top:437px;}
-#i19 {top:450px;}
+#i1 {top:215px;}
+#i2 {top:234px;}
+#i3 {top:253px;}
+#i4 {top:272px;}
+#i5 {top:291px;}
+#i6 {top:310px;}
+#i7 {top:329px;}
+#i8 {top:348px;}
+#i9 {top:367px;}
+#i10 {top:386px;}
+#i11 {top:405px;}
+#i12 {top:424px;}
+#i13 {top:443px;}
+#i14 {top:462px;}
+#i15 {top:510px;}
+#i16 {top:529px;}
+#i17 {top:548px;}
+#i18 {top:625px;}
+#i19 {top:644px;}
+
+#wizard-controls{
+	width: 900px;
+}
