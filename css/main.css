@@ -113,26 +113,38 @@ textarea {
 }
 
 #top-toolbar{
-	margin-top: 5px;
 	border: 2px solid;
-	position:relative;
-
+    position: fixed;
+    top: 0;
+	width: 100%;
+	z-index:1;
+	background-color: white;
 }
+
+#top-inner{
+	padding: 5px;
+}
+
 #risk-toolbar{
 	text-align: right;
 	position: absolute;
-	left:0;
+	left:5px;
 	display:inline;
 }
+
+#risk {
+	color: red;
+	font-size: 20px;
+	font-weight: bold;
+}
+
 #detail-level-toolbar{
-	border:1px solid;
 	width: 20px;
 	display:inline;
 	margin-left: 500px;
 }
 #done-button{
-	
-	border: 1px solid;
+	border: 1px solid black;
 	background:GREEN;
 	display:inline;
 	float:right;
@@ -155,6 +167,12 @@ textarea {
 	text-align: left;
 }
 
+#cholesterol {
+	border-bottom: 1px dotted #000;
+	overflow: hidden;
+	height: auto;
+}
+
 .graphs {
 	float:left;
 }
@@ -175,6 +193,7 @@ textarea {
 	border: 1px solid;
 	border-color: BLACK;
 }
+
 #behavorial-div{
 	margin-top:10px;
 	border: 2px solid;

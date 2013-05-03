@@ -30,12 +30,15 @@
         	if (level == 'b') {
 				<!-- change to beginner-->
 				document.getElementById("chol-def").innerHTML = "Sextus puer molestus est...";
+				document.getElementById("bc-def").innerHTML = "Sextus puer molestus est...";
         	} else if (level =='i') {
         	    <!-- change to intermediate -->
 				document.getElementById("chol-def").innerHTML = "Omnia Gallia divisa est in partes tres...";
+				document.getElementById("bc-def").innerHTML = "Omnia Gallia divisa est in partes tres...";
         	} else if (level == 'e') {
         		<!-- change to expert -->
 				document.getElementById("chol-def").innerHTML = "Arma virumque cano, Troiae qui primus ab oris...";
+				document.getElementById("bc-def").innerHTML = "Arma virumque cano, Troiae qui primus ab oris...";
         	}
 
         }
@@ -58,16 +61,18 @@
    <div id="resource-overlay" class="overlay">
         <div class="overlay-box"><p>Test</p></div>
    </div>
-<div id="top-toolbar" style="float:top">
-<span id="risk-toolbar">% and risks go here.</span>
+<div id="top-toolbar">
+	<div id="top-inner">
+<span id="risk-toolbar"><span id="risk">25%</span> risk of cardiovascular disease in the next 10 years</span>
 <span id="detail-level-toolbar">
-<select>
-  <option value="beginner" onclick="changeSuggestions('b')">Basic</option>
+Detail level: 
+<select selected="basic">
+  <option value="basic" onclick="changeSuggestions('b')">Basic</option>
   <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
   <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
 <span id="done-button" onclick="showOverlay('done-button')"><strong>I'm Done</strong></span>
-
+	</div>
 </div>
 <body>
 <div id="analysis-div">
@@ -83,7 +88,7 @@
 		</div>
 		<div class="infoboxes">
 			<h4>What This Means</h4>
-			<div class="definition-box" id="chol-def">Omnia Gallia divisa est in partes tres...</div>
+			<div class="definition-box" id="chol-def">Sextus puer molestus est...</div>
 			<h4>Suggestions</h4>
 			<div class="suggestion-box" id="chol-sug">
 				You can <em>reduce</em> your LDL by:<br />
@@ -93,7 +98,26 @@
 				
 				You can <em>raise</em> your HDL by:<br />
 				<img src="img/cross2.png" /> quitting smoking<br />
-				<img src="img/leaf2.png" /> eating more fiber<br />
+				<img src="img/leaf2.png" /> eating more fiber
+			</div>
+		</div>
+	</div>
+	<div id="bloodcount">
+		<div class="graphs">
+			<h4>Complete Blood Count</h4>
+			<img src="img/bloodcount.png" />
+		</div>
+		<div class="infoboxes">
+			<h4>What This Means</h4>
+			<div class="definition-box" id="bc-def">Sextus puer molestus est...</div>
+			<h4>Suggestions</h4>
+			<div class="suggestion-box" id="bc-sug">
+				You can <em>raise</em> your RBC count by:<br />
+				<img src="img/leaf2.png" /> eat leafy greens 3x per week<br />
+				<img src="img/man2.png" /> taking a walk during lunch<br /><br />
+				
+				You can <em>raise</em> your platelet count by:<br />
+				<img src="img/cross2.png" /> taking vitamin supplements
 			</div>
 		</div>
 	</div>
