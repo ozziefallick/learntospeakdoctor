@@ -214,13 +214,22 @@ h5 {
 	padding: 5px;
 	width: 20%;
 }
-#behavior-btns-div{
-    width: 20px;
-    position: absolute;
-    background-color: BLACK;
+
+#behavorial-div .X{
+	color: red;
+	margin: 5px;
+	cursor: pointer;
 }
+
+#behavorial-div .category{
+	float: right;
+}
+
+#behavior-butns-div button{
+    width: auto;
+}
+
 #behavior-btn{
-    
     border: 1px solid;
     background:WHITE;
     display:inline;

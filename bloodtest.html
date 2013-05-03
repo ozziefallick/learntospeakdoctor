@@ -89,6 +89,10 @@
 			document.getElementById('behav-nothing').style.display = 'none';
 			document.getElementById('behav-options').style.display = 'none';
 		}
+		
+		function currentBehavior(n) {
+			document.getElementById('row' + n).style.display = 'none';
+		}
         </script>
    </head>
    <div id="exit-overlay" class="overlay">
@@ -198,43 +202,44 @@ Detail level:
 		<button id="add-behavior" onclick="openOptions()">Add Behaviors>></button>
 	</div>
 	<div id="behav-options" style="display: none;">
-		<b>Exercise</b><br>
-		<div class="select-row">
-			<input type="checkbox" id="opt1" name="opt1" value="lunch-walk">
+		Check off activities to start doing.<br />If you already do it, click the X instead.<br /><br />
+		<b>Exercise</b><img src="img/man.png" class="category" /><br>
+		<div class="select-row" id="row1">
+			<input type="checkbox" id="opt1" name="opt1" value="lunch-walk">&nbsp;<span class="X" id="X1" onclick="currentBehavior(1)">X</span>
 			<label for="opt1">take a walk during lunch</label>
 		</div>
-		<div class="select-row">
-			<input type="checkbox" id="opt2" name="opt2" value="lift-weights">
+		<div class="select-row" id="row2">
+			<input type="checkbox" id="opt2" name="opt2" value="lift-weights">&nbsp;<span class="X" id="X2" onclick="currentBehavior(2)">X</span>
 			<label for="opt2">lift weights every night</label>
 		</div>
 
-		<div class="select-row">
-			<input type="checkbox" id="opt3" name="opt3" value="bike-work">
+		<div class="select-row" id="row3">
+			<input type="checkbox" id="opt3" name="opt3" value="bike-work">&nbsp;<span class="X" id="X3" onclick="currentBehavior(3)">X</span>
 			<label for="opt3">bike to work</label>
 		</div>
 
-		<b>Diet</b><br>
-		<div class="select-row">
-			<input type="checkbox" id="opt4" name="opt4" value="olive-butter">
+		<b>Diet</b><img src="img/leaf.png" class="category" /><br>
+		<div class="select-row" id="row4">
+			<input type="checkbox" id="opt4" name="opt4" value="olive-butter">&nbsp;<span class="X" id="X4" onclick="currentBehavior(4)">X</span>
 			<label for="opt4">substitute olive oil for butter</label>
 		</div>
-		<div class="select-row">
-			<input type="checkbox" id="opt5"name="opt5" value="fish">
+		<div class="select-row" id="row5">
+			<input type="checkbox" id="opt5"name="opt5" value="fish">&nbsp;<span class="X" id="X5" onclick="currentBehavior(5)">X</span>
 			<label for="opt5">eat fish 2x per week</label>
 		</div>
-		<div class="select-row">
-			<input type="checkbox" id="opt6" name="opt6" value="greens">
+		<div class="select-row" id="row6">
+			<input type="checkbox" id="opt6" name="opt6" value="greens">&nbsp;<span class="X" id="X6" onclick="currentBehavior(6)">X</span>
 			<label for="opt6">eat leafy greens 3x per week</label>
 		</div>
-		<b>Other</b><br>
-		<div class="select-row">
-			<input type="checkbox" id="opt7" name="opt7" value="smoking">
+		<b>Other</b><img src="img/cross.png" class="category" /><br>
+		<div class="select-row" id="row7">
+			<input type="checkbox" id="opt7" name="opt7" value="smoking">&nbsp;<span class="X" id="X7" onclick="currentBehavior(7)">X</span>
 			<label for="opt7">quit smoking</label>
-		</div>
+		</div><br />
 		<div id="behavior-butns-div">
-			<span id="behavior-btn" onclick="showOverlay('resource-button')">Resources</span>
-			<span id="behavior-btn" onclick="clearAllChecks()">Clear</span>
-			<span id="behavior-btn" onclick="applyBehaviors()">Apply</span>
+			<button onclick="showOverlay('resource-button')">Resources</button>
+			<button onclick="clearAllChecks()">Clear</button>
+			<button onclick="applyBehaviors()">Apply</button>
 		</div>
 	</div>
 	<div id="behav-selected" style="display: none;">
