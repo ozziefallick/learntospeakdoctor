@@ -27,12 +27,13 @@
         function changeSuggestions(level) {
         	if (level == 'b') {
 				<!-- change to beginner-->
-
+				document.getElementById("chol-def").innerHTML = "Sextus puer molestus est...";
         	} else if (level =='i') {
         	    <!-- change to intermediate -->
+				document.getElementById("chol-def").innerHTML = "Omnia Gallia divisa est in partes tres...";
         	} else if (level == 'e') {
         		<!-- change to expert -->
-
+				document.getElementById("chol-def").innerHTML = "Arma virumque cano, Troiae qui primus ab oris...";
         	}
 
         }
@@ -43,7 +44,7 @@
 <span id="risk-toolbar">% and risks go here.</span>
 <span id="detail-level-toolbar">
 <select>
-  <option value="beginner" onclick="changeSuggestions('b')">Beginner</option>
+  <option value="beginner" onclick="changeSuggestions('b')">Basic</option>
   <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
   <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
@@ -52,12 +53,32 @@
 </div>
 <body>
 <div id="analysis-div">
-<p>Cholesterol</p>
-<p>LDL</p>
-<p>HDL</p>
-<p>Triglycerides</p>
-<div id="definition-box">Definitions</div>
-<div id="suggestion-box">Suggestions</div>
+<h3>Your Blood Test Results</h3>
+	<div id="cholesterol">
+		<div class="graphs">
+			<h4>Cholesterol</h4>
+			<img src="img/cholesterol.png" />
+			<!--Total: 211 mg/dL<br />
+			LDL: 165 mg/dL<br />
+			HDL: 46 mg/dL<br />
+			Triglycerides: 160 mg/dL-->
+		</div>
+		<div class="infoboxes">
+			<h4>What This Means</h4>
+			<div class="definition-box" id="chol-def">Omnia Gallia divisa est in partes tres...</div>
+			<h4>Suggestions</h4>
+			<div class="suggestion-box" id="chol-sug">
+				You can <em>reduce</em> your LDL by:<br />
+				<img src="img/leaf2.png" /> substituting olive oil for butter<br />
+				<img src="img/man2.png" /> taking a walk during lunch<br />
+				<img src="img/leaf2.png" /> eat fish 2x per week<br /><br />
+				
+				You can <em>raise</em> your HDL by:<br />
+				<img src="img/cross2.png" /> quitting smoking<br />
+				<img src="img/leaf2.png" /> eating more fiber<br />
+			</div>
+		</div>
+	</div>
 </div>
 
 

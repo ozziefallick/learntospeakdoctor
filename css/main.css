@@ -140,23 +140,39 @@ textarea {
 }
 #analysis-div{
 	margin-top: 10px;
-	border: 2px solid;
-	border-color:BLUE;
-	width: 600px;
+	width: 70%;
 	position:absolute;
-	
+	padding: 10px;
+	text-align:left;
 }
-#definition-box{
+
+#analysis-div h3 {
+	text-align: left;
+}
+
+#analysis-div h4 {
+	text-align: left;
+}
+
+.graphs {
+	float:left;
+}
+
+.infoboxes {
+	float:right;
+	width: 35%;
+}
+
+.definition-box{
+	padding: 5px;
 	border: 1px solid;
 	border-color: BLACK;
-	float:right;
-	
+	height: 150px;
 }
-#suggestion-box{
+.suggestion-box{
+	padding: 5px;
 	border: 1px solid;
 	border-color: BLACK;
-	float:right;
-	
 }
 #behavorial-div{
 	margin-top:10px;
