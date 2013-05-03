@@ -16,13 +16,15 @@
 		<script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
         <script>
-        function exitFunction() {
-        	$("#done-button").click(function(){
-        		<!--show exit overlay -->
-        		var overlay = jQuery('<div id="overlay"> </div>');
-        		overlay.appendTo(document.body);
-        	});
+        function showOverlay(source) { // NOTE TO WHOMEVER: CHANGE TO ENCOMPASS RESOURCE OVERLAY IF NEED BE
+            if (source == 'done-button') {
+                $("#exit-overlay").fadeIn(500); // shows exit overlay
 
+            } else {
+                // resource btn
+                $("#resource-overlay").fadeIn(500); // shows resource overlay
+            }
+        	
         }
         function changeSuggestions(level) {
         	if (level == 'b') {
@@ -36,9 +38,25 @@
         	}
 
         }
+        function clearAllChecks() {
+            $('input[type=checkbox]').each(function () {
+                this.checked = false;
+            });
 
+        }
+        function applyBehaviors() {
+            // regardless of selection, for our purposes will show same behavior effects
+            // change analyses
+
+        }
         </script>
    </head>
+   <div id="exit-overlay" class="overlay">
+        <div class="overlay-box"><p>Test</p></div>
+   </div>
+   <div id="resource-overlay" class="overlay">
+        <div class="overlay-box"><p>Test</p></div>
+   </div>
 <div id="top-toolbar" style="float:top">
 <span id="risk-toolbar">% and risks go here.</span>
 <span id="detail-level-toolbar">
@@ -47,7 +65,7 @@
   <option value="intermediate" selected="selected" onclick="changeSuggestions('i')">Intermediate</option>
   <option value="expert" onclick="changeSuggestions('e')">Expert</option></select></span>
 
-<span id="done-button" onclick="exitFunction()" style="cursor:pointer"><strong>I'm Done</strong></span>
+<span id="done-button" onclick="showOverlay('done-button')"><strong>I'm Done</strong></span>
 
 </div>
 <body>
@@ -63,32 +81,8 @@
 
 
 
-
-<!--
 <div id="behavorial-div">
-<p>Behavorial Toolbox</p>
-<form action="">
-Exercise<br>
-<div class="squaredThree" id="exercise-div">
-<input id="opt1" type="checkbox" name="check" value="lunch-walk">
-<label for="opt1"></label> take a walk during lunch<br></div>
-
-<div class="squaredThree" id="exercise-div">
-<input id="opt2" type="checkbox" name="check" value="lunch-walk">
-<label for="opt2"></label>lift weights every night<br></div>
-</form>
-</div>
--->
-
-
-
-
-
-
-
-
-<div id="behavorial-div">
-<p>Behavorial Toolbox</p>
+<p><strong>Behavorial Toolbox</strong></p>
 <form action="">
 <b>Exercise</b><br>
 	<div class="select-row">
@@ -123,6 +117,11 @@ Exercise<br>
 		<input type="checkbox" id="opt7" name="opt7" value="smoking">
 		<label for="opt7">quit smoking</label>
 	</div>
+    <div id="behavior-butns-div">
+    <span id="behavior-btn" onclick="showOverlay('resource-button')">Resources</span>
+    <span id="behavior-btn" onclick="clearAllChecks()">Clear</span>
+    <span id="behavior-btn" onclick="applyBehaviors()">Apply</span>
+    </div>
 
 </div>
 
