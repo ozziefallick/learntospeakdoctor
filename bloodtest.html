@@ -22,8 +22,11 @@
 			<h4>What would you like to do now?</h4>
 			<button class="close-button" onclick="$('#exit-overlay').fadeOut(100)">X</button>
 			<button onclick="alert('Not yet implemented')">Save these results</button>
+			<p style="text-align:center">Save your results on your computer</p>
 			<button onclick="alert('Not yet implemented')">Print these results</button>
+			<p style="text-align:center">Allows you to print a printer-friendly version of your results & our analyses</p>
 			<button onclick="alert('Not yet implemented')">Go to action plan</button>
+			<p style="text-align:center">Shows a summary of the behavorial changes you've selected and how to adopt them</p>
 		</div>
    </div>
    <div id="resource-overlay" class="overlay">
@@ -33,6 +36,7 @@
 			<h5>Exercise</h5>
 			<input type="checkbox" id="res1" checked>
 			<label for="res1">take a walk during lunch</label>
+<<<<<<< HEAD
 			<p>Why: The American Heart Association recommends 150 minutes of moderate aerobic activity each week to prevent heart disease. You can walk 30 minutes each day during your lunch break and reach this goal. Learn more at <a href="http://heart.org/activityrecommendations" target="_blank">heart.org/activityrecommendations</a>.</p>
 			<p>How: Find a walking path and keep a log of your activity at <a href="http://www.startwalkingnow.org">www.startwalkingnow.org</a>.</p>
 			
@@ -46,6 +50,21 @@
 			<p>Why: Biking to work not only count as moderate aerobic activity, but it also saves on transit, parking, and gas expenses. A recent study by the British Medical Association shows that biking 20 miles a week can reduce heart disease risk by 50% over a lifetime. Read more at <a href="http://www.medicalnewstoday.com/articles/225940.php" target="_blank">www.medicalnewstoday.com/articles/225940.php</a>.</p>
 			<p>How: Plan your route and check your safety gear with a beginner's biking guide at <a href="http://www.biketoworkinfo.org/resources/rsc_guide-beginner.cfm" target="_blank">www.biketoworkinfo.org/resources/rsc_guide-beginner.cfm</a>.</p>
  
+=======
+			<p><b>Why:</b> The American Heart Association recommends 150 minutes of moderate aerobic activity each week to prevent heart disease. You can walk 30 minutes each day during your lunch break and reach this goal. Learn more at <a href="heart.org/activityrecommendations">heart.org/activityrecommendations</a>.</p>
+			<p><b>How:</b> Find a walking path and keep a log of your activity at <a href="www.startwalkingnow.org">www.startwalkingnow.org</a>.</p>
+
+			<input type="checkbox" id="res2">
+			<label for="res2">lift weights during commercials</label>
+			<p><b>Why:</b> The American Heart Association recommends moderate muscle-strengthening twice a week. You can lift weights during the commercials of your two favorite programs and reach this goal. Learn more at <a href="heart.org/activityrecommendations">heart.org/activityrecommendations</a> and <a href="www.medicalnewstoday.com/articles/77017.php">www.medicalnewstoday.com/articles/77017.php</a>.</p>
+			<p><b>How:</b> Start with a basic, equipment-free workout at <a href="www.sparkpeople.com">www.sparkpeople.com</a>.</p>
+
+			<input type="checkbox" id="res3">
+			<label for="res3">bike to work</label>
+			<p><b>Why:</b> Biking to work not only count as moderate aerobic activity, but it also saves on transit, parking, and gas expenses. A recent study by the British Medical Association shows that biking 20 miles a week can reduce heart disease risk by 50% over a lifetime. Read more at [www.medicalnewstoday.com/articles/225940.php].</p>
+			<p><b>How:</b> Plan your route and check your safety gear with a beginner's biking guide at <a href="www.biketoworkinfo.org/resources/rsc_guide-beginner.cfm">www.biketoworkinfo.org/resources/rsc_guide-beginner.cfm</a>.</p>
+
+>>>>>>> Text changes to exit and resource overlays
 			<input type="checkbox" id="res4">
 			<label for="res4">use a standing desk</label>
 			<p>...</p>
@@ -55,7 +74,7 @@
 	<div id="top-inner">
 <span id="risk-toolbar"><span id="risk">25%</span> risk of cardiovascular disease in the next 10 years</span>
 <span id="detail-level-toolbar">
-Detail level: 
+Detail level:
 <select onChange="changeSuggestions(this.value)">
   <option value="basic" selected="selected">Basic</option>
   <option value="intermediate">Intermediate</option>
@@ -87,7 +106,7 @@ Detail level:
 				<img src="img/leaf2.png" /> substituting olive oil for butter<br />
 				<img src="img/man2.png" /> taking a walk during lunch<br />
 				<img src="img/leaf2.png" /> eat fish 2x per week<br /><br />
-				
+
 				You can <em>raise</em> your HDL by:<br />
 				<img src="img/cross2.png" /> quitting smoking<br />
 				<img src="img/leaf2.png" /> eating more fiber
@@ -109,7 +128,7 @@ Detail level:
 				You can <em>raise</em> your RBC count by:<br />
 				<img src="img/leaf2.png" /> eat leafy greens 3x per week<br />
 				<img src="img/man2.png" /> taking a walk during lunch<br /><br />
-				
+
 				You can <em>raise</em> your platelet count by:<br />
 				<img src="img/cross2.png" /> taking vitamin supplements
 			</div>
