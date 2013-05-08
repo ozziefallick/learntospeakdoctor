@@ -1,4 +1,9 @@
-        function showOverlay(source) { // NOTE TO WHOMEVER: CHANGE TO ENCOMPASS RESOURCE OVERLAY IF NEED BE
+        $(window).load(function () {
+			$("#onboarding-overlay").fadeIn(500);
+			$("body").css("overflow", "hidden");
+		});
+		
+		function showOverlay(source) { // NOTE TO WHOMEVER: CHANGE TO ENCOMPASS RESOURCE OVERLAY IF NEED BE
             if (source == 'done-button') {
                 $("#exit-overlay").fadeIn(500); // shows exit overlay
 

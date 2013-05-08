@@ -53,6 +53,29 @@
 			<label for="res4">use a standing desk</label>
 			<p>...</p>
 		</div>
+	</div>
+    <div id="onboarding-overlay" class="overlay" onclick="$('#onboarding-overlay').fadeOut(100);$('body').css('overflow', 'auto');">
+		<div id="onb-exit-text">
+			Click anywhere to close.
+		</div>
+        <div id="onb-risk" class="onboarding-box">
+			Your risk, based on your test results, is shown here.
+		</div>
+		<div id="onb-graphs" class="onboarding-box">
+			These displays show how your results compare to the general population and where you want to be.
+		</div>
+		<div id="onb-level" class="onboarding-box">
+			You can change the level of detail in the explanations using this menu.
+		</div>
+		<div id="onb-toolbox" class="onboarding-box">
+			Use this toolbox to select behaviors you can adopt to improve your results. We'll show you the effects of these changes.
+		</div>
+		<div class="onboarding-box" id="onb-explain">
+			These text boxes explain what each test value is.
+		</div>
+		<div class="onboarding-box" id="onb-suggest">
+			These text boxes give suggestions of behaviors you can use to improve each result.
+		</div>
    </div>
 <div id="top-toolbar">
 	<div id="top-inner">

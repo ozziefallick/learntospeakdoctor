@@ -259,6 +259,54 @@ h5 {
 	top: 0px;
 }
 
+.onboarding-box {
+	background: white;
+	border: 1px solid black;
+	padding: 10px;
+	width: 200px;
+	position: absolute;
+}
+
+#onb-exit-text {
+	color: white;
+	position: absolute;
+	top: 5px;
+	right: 10px;
+	font-size: 24;
+	background-color: rgba(0,0,0,0.75);
+	padding: 5px;
+}
+
+#onb-risk {
+	left: 2%;
+	top: 30px;
+}
+
+#onb-graphs {
+	left: 100px;
+	top: 200px;
+}
+
+#onb-level {
+	left: 55%;
+	top: 30px;
+}
+
+#onb-toolbox {
+	right: 2%;
+	top: 125px;
+}
+
+#onb-explain {
+	right: 35%;
+	top: 250px;
+}
+
+#onb-suggest{
+	right: 35%;
+	top: 475px;
+}
+
 #resource-box {
 	width: 50%;
 	text-align:left;
